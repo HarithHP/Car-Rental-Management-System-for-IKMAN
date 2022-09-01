@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00CFF77E-64DD-46D9-88FD-C17179AFAE71}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IKMAN_APP</RootNamespace>
+    <AssemblyName>IKMAN APP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about_us.Designer.cs">
+      <DependentUpon>about_us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_add_car_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_add_car_form.Designer.cs">
+      <DependentUpon>Admin_add_car_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_add_customer_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_add_customer_form.Designer.cs">
+      <DependentUpon>admin_add_customer_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_login_form.Designer.cs">
+      <DependentUpon>Admin_login_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_view.Designer.cs">
+      <DependentUpon>admin_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pay_fees_fine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pay_fees_fine.Designer.cs">
+      <DependentUpon>Pay_fees_fine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rent_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rent_form.Designer.cs">
+      <DependentUpon>Rent_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Return_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return_form.Designer.cs">
+      <DependentUpon>Return_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_car_detail_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_car_detail_form.Designer.cs">
+      <DependentUpon>user_car_detail_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_form.Designer.cs">
+      <DependentUpon>login_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="register_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register_form.Designer.cs">
+      <DependentUpon>register_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash_form.Designer.cs">
+      <DependentUpon>splash_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="about_us.resx">
+      <DependentUpon>about_us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_add_car_form.resx">
+      <DependentUpon>Admin_add_car_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_add_customer_form.resx">
+      <DependentUpon>admin_add_customer_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_login_form.resx">
+      <DependentUpon>Admin_login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_view.resx">
+      <DependentUpon>admin_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pay_fees_fine.resx">
+      <DependentUpon>Pay_fees_fine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rent_form.resx">
+      <DependentUpon>Rent_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Return_form.resx">
+      <DependentUpon>Return_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_car_detail_form.resx">
+      <DependentUpon>user_car_detail_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_form.resx">
+      <DependentUpon>login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="register_form.resx">
+      <DependentUpon>register_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash_form.resx">
+      <DependentUpon>splash_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikmn_copy.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
