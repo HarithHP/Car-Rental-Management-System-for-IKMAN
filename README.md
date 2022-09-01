@@ -4,4 +4,4 @@ Description and Usage - his is a windows application which can manage a Car Rent
 cars and clients Inventories, Manage Rents and Payments with automatic bills
 generating and generate Reports are the key functionalities.
 
-•Technologies - .Net framework with C#, MySQL, Microsoft RDLC Reports
+•Technologies - .Net framework with C#, MySQL, Microsoft RDLC Reports, Tiles nuGet package for UI ,Google maps ,Qr nuGet Packages
